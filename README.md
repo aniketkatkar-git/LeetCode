@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/aniketkatkar-git/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0204-count-primes](https://github.com/aniketkatkar-git/LeetCode/tree/master/0204-count-primes) |
 | [0268-missing-number](https://github.com/aniketkatkar-git/LeetCode/tree/master/0268-missing-number) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/aniketkatkar-git/LeetCode/tree/master/2106-find-greatest-common-divisor-of-array) |
@@ -40,4 +41,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/aniketkatkar-git/LeetCode/tree/master/0268-missing-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/aniketkatkar-git/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 <!---LeetCode Topics End-->
