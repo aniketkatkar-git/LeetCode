@@ -7,16 +7,13 @@ class Solution {
         Map<Character, Character> tMap = new HashMap<>();
 
         for (int i = 0; i < s.length(); i++) {
-            if (sMap.containsKey(s.charAt(i))) {
-                if (sMap.get(s.charAt(i)) != t.charAt(i)) {
-                    return false;
-                }
-            } else if (tMap.containsKey(t.charAt(i))) {
+            char sChar = s.charAt(i);
+            char tChar = t.charAt(i);
+            if ((sMap.containsKey(sChar) && sMap.get(sChar) != tChar) || (tMap.containsKey(tChar) && tMap.get(tChar) != sChar)) {
                 return false;
-            } else {
-                sMap.put(s.charAt(i), t.charAt(i));
-                tMap.put(t.charAt(i), s.charAt(i));
             }
+            sMap.put(sChar, tChar);
+            tMap.put(tChar, sChar);
         }
         return true;
     }
