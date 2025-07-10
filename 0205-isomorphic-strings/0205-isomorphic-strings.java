@@ -9,7 +9,10 @@ class Solution {
         for (int i = 0; i < s.length(); i++) {
             char sChar = s.charAt(i);
             char tChar = t.charAt(i);
-            if ((sMap.containsKey(sChar) && sMap.get(sChar) != tChar) || (tMap.containsKey(tChar) && tMap.get(tChar) != sChar)) {
+            Character sMapped = sMap.get(sChar);
+            Character tMapped = tMap.get(tChar);
+
+            if ((sMapped != null && sMapped != tChar) || (tMapped != null && tMapped != sChar)) {
                 return false;
             }
             sMap.put(sChar, tChar);
