@@ -11,12 +11,9 @@ class Solution {
                 if (sMap.get(s.charAt(i)) != t.charAt(i)) {
                     return false;
                 }
+            } else if (tMap.containsKey(t.charAt(i))) {
+                return false;
             } else {
-                if (tMap.containsKey(t.charAt(i))) {
-                    if (tMap.get(t.charAt(i)) != s.charAt(i)) {
-                        return false;
-                    }
-                }
                 sMap.put(s.charAt(i), t.charAt(i));
                 tMap.put(t.charAt(i), s.charAt(i));
             }
