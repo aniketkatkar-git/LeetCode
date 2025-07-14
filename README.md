@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/aniketkatkar-git/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/aniketkatkar-git/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/aniketkatkar-git/LeetCode/tree/master/0027-remove-element) |
+| [0169-majority-element](https://github.com/aniketkatkar-git/LeetCode/tree/master/0169-majority-element) |
 | [0204-count-primes](https://github.com/aniketkatkar-git/LeetCode/tree/master/0204-count-primes) |
 | [0268-missing-number](https://github.com/aniketkatkar-git/LeetCode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/aniketkatkar-git/LeetCode/tree/master/0283-move-zeroes) |
@@ -31,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/aniketkatkar-git/LeetCode/tree/master/0169-majority-element) |
 | [0205-isomorphic-strings](https://github.com/aniketkatkar-git/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/aniketkatkar-git/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/aniketkatkar-git/LeetCode/tree/master/0268-missing-number) |
@@ -45,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/aniketkatkar-git/LeetCode/tree/master/0169-majority-element) |
 | [0242-valid-anagram](https://github.com/aniketkatkar-git/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/aniketkatkar-git/LeetCode/tree/master/0268-missing-number) |
 ## Two Pointers
@@ -70,4 +73,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0812-rotate-string](https://github.com/aniketkatkar-git/LeetCode/tree/master/0812-rotate-string) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/aniketkatkar-git/LeetCode/tree/master/0169-majority-element) |
+## Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/aniketkatkar-git/LeetCode/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
