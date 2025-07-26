@@ -1,19 +1,16 @@
 class Solution {
 
     public boolean containsDuplicate(int[] nums) {
-        // If array is empty or has only one element, no duplicates are possible
-        if (nums.length <= 1) {
-            return false;
-        }
+        // Use a HashSet to keep track of seen elements
+        Set<Integer> set = new HashSet<>();
 
-        // Sort the array to bring duplicates next to each other
-        Arrays.sort(nums);
-
-        // Iterate through the array and check for adjacent duplicates
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (nums[i] == nums[i + 1]) {
-                return true; // Found duplicate
+        // Iterate through the array
+        for (int num : nums) {
+            // If the number is already in the set, we found a duplicate
+            if (set.contains(num)) {
+                return true; // Add the number to the set
             }
+            set.add(num);
         }
 
         // No duplicates found
