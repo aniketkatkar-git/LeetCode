@@ -12,11 +12,9 @@ class Solution {
         // Declare an array of size 2n to store the concatenated elements
         int[] ans = new int[2 * n];
 
-        // Iterate through 'nums' and copy each element twice in the 'ans' array
-        for (int i = 0; i < nums.length; i++) {
-            ans[i] = nums[i];
-            ans[n + i] = nums[i];
-        }
+        // System.arraycopy(Source array, Start index in the source array, Destination array, Start index in the destination array, Number of elements to copy);
+        System.arraycopy(nums, 0, ans, 0, n); // Copy to first half
+        System.arraycopy(nums, 0, ans, n, n); // Copy to second half
 
         // Return the concatenated result array
         return ans;
