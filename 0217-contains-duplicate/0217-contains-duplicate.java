@@ -7,10 +7,9 @@ class Solution {
         // Iterate through the array
         for (int num : nums) {
             // If the number is already in the set, we found a duplicate
-            if (set.contains(num)) {
-                return true; // Add the number to the set
+            if (!set.add(num)) {
+                return true; // Duplicate found
             }
-            set.add(num);
         }
 
         // No duplicates found
