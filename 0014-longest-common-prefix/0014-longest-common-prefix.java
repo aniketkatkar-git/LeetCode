@@ -1,19 +1,25 @@
 class Solution {
 
     public String longestCommonPrefix(String[] strs) {
-        // Sort the strings
-        Arrays.sort(strs);
-
-        // Assume first word in the array is the prefix
-        String first = strs[0];
-        String last = strs[strs.length - 1];
-
-        // Compare this prefix with each of the remaining strings.
-        // At each comparison, shrink the prefix if the current string doesn't start with it.
-        while (!last.startsWith(first)) {
-            first = first.substring(0, first.length() - 1);
+        // Check if string is empty or null
+        if (strs == null && strs.length == 0) {
+            return "";
         }
 
-        return first;
+        // Start with the first string as the prefix
+        String prefix = strs[0];
+
+        // Itreate through every string and check every string is starts with prefix or not
+        for (int i = 1; i < strs.length; i++) {
+            while (!strs[i].startsWith(prefix)) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+
+                if (prefix.isEmpty()) {
+                    return "";
+                }
+            }
+        }
+
+        return prefix;
     }
 }
