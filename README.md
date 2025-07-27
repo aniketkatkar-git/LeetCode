@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/aniketkatkar-git/LeetCode/tree/master/0001-two-sum) |
 | [0014-longest-common-prefix](https://github.com/aniketkatkar-git/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/aniketkatkar-git/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/aniketkatkar-git/LeetCode/tree/master/0027-remove-element) |
@@ -34,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/aniketkatkar-git/LeetCode/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/aniketkatkar-git/LeetCode/tree/master/0169-majority-element) |
 | [0205-isomorphic-strings](https://github.com/aniketkatkar-git/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0217-contains-duplicate](https://github.com/aniketkatkar-git/LeetCode/tree/master/0217-contains-duplicate) |
