@@ -6,19 +6,27 @@ class Solution {
             return false;
         }
 
-        // Convert both strings to character arrays
-        char[] sChar = s.toCharArray();
-        char[] tChar = t.toCharArray();
+        // Create a count array to store the frequency of each character
+        // Assuming input contains only lowercase English letters ('a' to 'z')
+        int[] count = new int[26];
 
-        // Sort both character arrays
-        Arrays.sort(sChar);
-        Arrays.sort(tChar);
+        // Increment count for each character in string 's'
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i) - 'a']++;
+        }
 
-        // Convert sorted character arrays back to strings
-        String sStr = new String(sChar);
-        String tStr = new String(tChar);
+        // Decrement count for each character in string 't'
+        for (int j = 0; j < t.length(); j++) {
+            count[t.charAt(j) - 'a']--;
+        }
 
-        // Compare both sorted strings
-        return sStr.equals(tStr);
+        // If all counts are zero, then strings are anagrams
+        for (int k = 0; k < count.length; k++) {
+            if (count[k] != 0) {
+                return false; // Found mismatch in character frequency
+            }
+        }
+
+        return true; // All characters match in frequency
     }
 }
