@@ -6,27 +6,24 @@ class Solution {
             return false;
         }
 
-        // Create a count array to store the frequency of each character
-        // Assuming input contains only lowercase English letters ('a' to 'z')
-        int[] count = new int[26];
-
-        // Increment count for each character in string 's'
-        for (int i = 0; i < s.length(); i++) {
-            count[s.charAt(i) - 'a']++;
+        // Count frequency of each character in string s
+        Map<Character, Integer> freqMap = new HashMap<>();
+        for (char ch : s.toCharArray()) {
+            freqMap.put(ch, freqMap.getOrDefault(ch, 0) + 1);
         }
 
-        // Decrement count for each character in string 't'
-        for (int j = 0; j < t.length(); j++) {
-            count[t.charAt(j) - 'a']--;
-        }
+        // Decrease frequency based on characters in string t
+        for (char ch : t.toCharArray()) {
+            if (!freqMap.containsKey(ch)) {
+                return false;
+            }
 
-        // If all counts are zero, then strings are anagrams
-        for (int k = 0; k < count.length; k++) {
-            if (count[k] != 0) {
-                return false; // Found mismatch in character frequency
+            freqMap.put(ch, freqMap.get(ch) - 1);
+            if (freqMap.get(ch) < 0) {
+                return false;
             }
         }
 
-        return true; // All characters match in frequency
+        return true;
     }
 }
