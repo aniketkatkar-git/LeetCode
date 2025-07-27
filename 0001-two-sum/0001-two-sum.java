@@ -1,7 +1,7 @@
 class Solution {
 
     public int[] twoSum(int[] nums, int target) {
-        // Declare a HashMap to store elements from the nums array
+        // Map to store number → index
         Map<Integer, Integer> numToIndex = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
@@ -11,6 +11,7 @@ class Solution {
             numToIndex.put(nums[i], i);
         }
 
+        // Return empty array if no solution found
         return new int[0];
     }
 }
